@@ -1,4 +1,5 @@
-const BASE = '';
+// In production, set VITE_API_BASE to your backend URL (e.g. https://your-app.onrender.com)
+const BASE = import.meta.env.VITE_API_BASE || '';
 
 export async function uploadPdf(file) {
   const form = new FormData();

@@ -20,6 +20,9 @@ class Settings(BaseSettings):
     # Summarization: max chars to send (GPT-4o has 128k context; ~50k chars ≈ safe margin)
     summarization_max_chars: int = 50_000
 
+    # Production: comma-separated CORS origins for your frontend (e.g. https://your-app.vercel.app)
+    allowed_origins: str = ""
+
     class Config:
         env_file = ".env"
         extra = "ignore"
