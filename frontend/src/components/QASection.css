@@ -1,0 +1,80 @@
+.qa-section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+.qa-section h2 {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.qa-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.qa-input {
+  flex: 1;
+  padding: 0.65rem 1rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.qa-input::placeholder {
+  color: var(--text-muted);
+}
+
+.qa-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.qa-submit {
+  padding: 0.65rem 1.25rem;
+  background: var(--accent);
+  color: var(--bg);
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.qa-submit:hover:not(:disabled) {
+  background: var(--accent-dim);
+}
+
+.qa-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.qa-error {
+  margin: 0.5rem 0 0;
+  color: var(--error);
+  font-size: 0.9rem;
+}
+
+.qa-answer {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.qa-answer strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.qa-answer p {
+  margin: 0;
+  white-space: pre-wrap;
+}
